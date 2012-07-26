@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D7F5DCBE-C6DF-4983-9B1E-4917478A658D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Test", "Domain.Test\Domain.Test.csproj", "{BB3DC144-D10D-4D96-8E3C-10991E18BADB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7F5DCBE-C6DF-4983-9B1E-4917478A658D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F5DCBE-C6DF-4983-9B1E-4917478A658D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F5DCBE-C6DF-4983-9B1E-4917478A658D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F5DCBE-C6DF-4983-9B1E-4917478A658D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3DC144-D10D-4D96-8E3C-10991E18BADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3DC144-D10D-4D96-8E3C-10991E18BADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3DC144-D10D-4D96-8E3C-10991E18BADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3DC144-D10D-4D96-8E3C-10991E18BADB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
