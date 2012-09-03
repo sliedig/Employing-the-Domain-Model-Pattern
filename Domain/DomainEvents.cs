@@ -9,7 +9,7 @@ namespace Domain
 		[ThreadStatic] //so that each thread has its own callbacks
 		private static List<Delegate> _actions;
 
-		public static IUnityContainer Container { get; set; } //as before
+		public static IUnityContainer Container { get; set; }
 
 		//Registers a callback for the given domain event
 		public static void Register<T>(Action<T> callback) where T : IDomainEvent
@@ -38,10 +38,4 @@ namespace Domain
 						((Action<T>)action)(args);
 		}
 	}
-
-	public class CustomerBecamePreferred : IDomainEvent
-	{
-		public Customer Customer { get; set; }
-	}
-
 }

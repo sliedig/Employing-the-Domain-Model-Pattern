@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using Domain;
 using Microsoft.Practices.Unity;
-using NUnit.Framework;
 
-namespace Domain.Test
+namespace Client
 {
-	[TestFixture]
-	public class UnitTest
+	class Program
 	{
-		IUnityContainer _container;
+		static IUnityContainer _container;
 
-		[TestFixtureSetUp]
-		public void TestFixtureSetup()
+		static void Main(string[] args)
 		{
 			_container = new UnityContainer()
 						.RegisterType<IDomainEvent, CustomerBecamePreferred>()
@@ -24,22 +22,11 @@ namespace Domain.Test
 
 			DomainEvents.Container = _container;
 
-			Assert.That(_container.ResolveAll<IHandle<CustomerBecamePreferred>>().Count(), Is.EqualTo(2));
-			Assert.That(_container.ResolveAll<IHandle<CustomerexceededAccountLimit>>().Count(), Is.EqualTo(2));
-
-		}
-
-
-		[Test]
-		public void Do_something_should_make_customer_preferred()
-		{
-			var c = new Customer();
-			Customer preferred = null;
-
-			DomainEvents.Register<CustomerBecamePreferred>(p => preferred = p.Customer);
-
+			var c = new Customer { EmailAddress = "someone@something.com", IsPreferred = false };
+			Console.WriteLine("Is Preferred Customer {0}", c.IsPreferred);
 			c.DoSomething();
-			Assert.That(preferred == c && c.IsPreferred);
+			Console.WriteLine("Is Preferred Customer {0}", c.IsPreferred);
+
 		}
 	}
 }

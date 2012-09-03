@@ -11,11 +11,12 @@ namespace Domain
 			get { return 100M; }
 		}
 
+		public string EmailAddress { get; set; }
 
 
 		public void DoSomething()
 		{
-			// regular logic (that also makes IsPreferred = true)
+			IsPreferred = true; // regular logic (that also makes IsPreferred = true)
 			DomainEvents.Raise(new CustomerBecamePreferred() { Customer = this });
 		}
 
