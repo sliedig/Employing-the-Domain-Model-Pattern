@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using Domain;
 using Microsoft.Practices.Unity;
 
@@ -27,6 +24,7 @@ namespace Client
 			c.DoSomething();
 			Console.WriteLine("Is Preferred Customer {0}", c.IsPreferred);
 
+			Console.Read();
 		}
 	}
 }

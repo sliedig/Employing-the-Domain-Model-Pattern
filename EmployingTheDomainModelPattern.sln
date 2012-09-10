@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Test", "Domain.Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B86A4BBA-6168-449C-8344-51985DE2D64A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Autofac.Test", "Domain.Autofac.Test\Domain.Autofac.Test.csproj", "{03DBCB01-39F2-49D9-9116-7895ACD00474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Autofac", "Domain.Autofac\Domain.Autofac.csproj", "{2C8D6F42-E7E8-405A-B963-8742AFC86831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity", "Unity", "{97EAA336-9DAD-4714-91E6-5218A6B0EA2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autofac", "Autofac", "{1754BDB0-0467-4D77-AE93-F7D086D09B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.Autofac", "Client.Autofac\Client.Autofac.csproj", "{395768C2-61A8-4641-8EFA-5CD30C65E87D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,9 +57,47 @@ Global
 		{B86A4BBA-6168-449C-8344-51985DE2D64A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B86A4BBA-6168-449C-8344-51985DE2D64A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B86A4BBA-6168-449C-8344-51985DE2D64A}.Release|x86.ActiveCfg = Release|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{03DBCB01-39F2-49D9-9116-7895ACD00474}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831}.Release|x86.ActiveCfg = Release|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7F5DCBE-C6DF-4983-9B1E-4917478A658D} = {97EAA336-9DAD-4714-91E6-5218A6B0EA2F}
+		{BB3DC144-D10D-4D96-8E3C-10991E18BADB} = {97EAA336-9DAD-4714-91E6-5218A6B0EA2F}
+		{B86A4BBA-6168-449C-8344-51985DE2D64A} = {97EAA336-9DAD-4714-91E6-5218A6B0EA2F}
+		{2C8D6F42-E7E8-405A-B963-8742AFC86831} = {1754BDB0-0467-4D77-AE93-F7D086D09B9A}
+		{03DBCB01-39F2-49D9-9116-7895ACD00474} = {1754BDB0-0467-4D77-AE93-F7D086D09B9A}
+		{395768C2-61A8-4641-8EFA-5CD30C65E87D} = {1754BDB0-0467-4D77-AE93-F7D086D09B9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.2.1.505.2\lib\NET35
